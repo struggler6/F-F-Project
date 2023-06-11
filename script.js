@@ -54,7 +54,7 @@ function loadTrack(track_index){
     track_name[0].innerHTML = music_list[track_index].name;
     track_artist[0].innerHTML= music_list[track_index].artist;
     
-     document.querySelector document.querySelector('.track-name2')[0,0].innerHTML = music_list[0].name;
+     document.querySelector('.track-name2')[0,0].innerHTML = music_list[0].name;
     document.querySelector('.track-artist2')[0,0].innerHTML= music_list[0].artist;
 
     document.querySelector('.track-name2')[0,1].innerHTML = music_list[1].name;
