@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="icon" type="image/x-icon" href="./images/letter-a.png">
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script src="jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./images/letter-a.png" alt="">
+        <span>AMBRO</span>
+    </header>
+    <main>
+        <section class="main-section">
+        <div class="welcome">Log in to AMBRO</div>
+<div class="button-cont">
+        <button> <img src="./images/google.png" alt=""> Continue With Google</button>
+        <button> <img src="./images/facebookblue.png" alt="" style="position: relative;left: 7px;"> Continue With Facebook</button>
+        <button> <img src="./images/apple.png" alt=""> Continue With Apple</button>
+        </div>
+        <div style="    grid-column: 3/4;grid-row: 6/7;width: 100%;height: 100%;background: #292929;"></div>
+       <div class="form-cont">
+            <label for="emailinput" id="emaillabel">
+                <div style="font-size: 24px;">Email Address </div>
+                <input type="text" placeholder="Email Address" id="emailinput">
+            <div class="invalidcontainer">your email should have @,number and gmail.com</div>
+            </label>
+        <label style="position: relative;" for="passwordinput" id="passwordlabel">
+            <div style="font-size: 24px;">Password</div>
+        <img class="eye"  style=" position: absolute;right: 15px;top: 40px;" onclick="myFunction()"    src="./images/eye.png" alt="">
+        <img class="eyeclosed"  style="    position: absolute;right: 15px;top: 40px;" onclick="myFunction()" src="./images/closedEye.png" alt="">
+            <input type="password" placeholder="password" id="passwordinput">
+        </label>
+    </div>
+    </div>
+    <div class="remember-cont">
+        <input style="visibility: hidden;" type="checkbox" name="" id="darkmode-toggle">
+        <label  class="darkmode-label" for="darkmode-toggle"></label>
+    <span>Remember me</span>  
+</div>
+    <button class="logInClass">Log In</button>
+    <a href="" style="grid-column: 3/4;grid-row: 14/15;height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;color: white;font-size: 15px;text-decoration: underline !important;font-family: system-ui;">Forgot Your password?</a>
+    <div style="grid-column: 3/4;grid-row: 16/17;width: 100%;background-color: #292929;height: 0.4px;"></div>
+    <div class="lastquestion">Don't have an account?
+        <a href="./signup.html">Sign ip for spotify</a>
+    </div>
+</section>
+</main>
+
+
+
+    <script>
+
+        function myFunction() {
+  var x = document.getElementById("passwordinput");
+  if (x.type === "password") {
+    x.type = "text";
+    document.querySelector(".eyeclosed").style.display = "none";
+    document.querySelector(".eye").style.display = "block";
+
+  } else {
+    x.type = "password";
+    document.querySelector(".eyeclosed").style.display = "block";
+    document.querySelector(".eye").style.display = "none";
+  }
+}
+
+$(document).ready(function() {
+  var passwordInput = $("#passwordinput");
+  var errorMessageShown = false;
+
+  passwordInput.on("blur", function() {
+    if (passwordInput.val().length <= 5 && !errorMessageShown) {
+        var newElement = $('<div>Your email is invalid <img src="./images/!!!!.png" class="invalidimg"></img></div>');
+      newElement.addClass('invalid-class');
+      newElement.css('user-select', 'none')
+      newElement.css('color', 'red');
+      newElement.css('font-size', '18px');
+      newElement.css('letter-spacing', '0.5px');
+
+      $('#passwordlabel').append(newElement);
+      errorMessageShown = true;
+    }
+  });
+
+  passwordInput.on("input", function() {
+    if (passwordInput.val().length > 5 && errorMessageShown) {
+      $('.invalid-class').remove();
+      errorMessageShown = false;
+    }
+  });
+});
+
+
+$(document).ready(function() {
+  var emailinput = $("#emailinput");
+  var errorMessageShown = false;
+
+  emailinput.on("blur", function() {
+    if (emailinput.val().length <= 5 && !errorMessageShown) {
+      var newElement = $('<div>Your password is invalid <img src="./images/!!!!.png" class="invalidimg2"></img></div>');
+      newElement.addClass('invalid-class2');
+      newElement.css('color', 'red');
+      newElement.css('font-size', '18px');
+      newElement.css('letter-spacing', '0.5px');
+      newElement.css('user-select', 'none')
+
+      $('#emaillabel').append(newElement);
+      errorMessageShown = true;
+     if($('.invalidimg')){
+        $('.invalidimg2').hover(function() {
+  $('.invalidcontainer').toggleClass('dBlock');
+});
+
+     }
+    }
+  });
+
+  emailinput.on("input", function() {
+    if (emailinput.val().length > 5 && errorMessageShown) {
+      $('.invalid-class2').remove();
+      errorMessageShown = false;
+    }
+  });
+});
+
+
+
+
+</script>
+</body>
+</html>
