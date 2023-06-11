@@ -51,8 +51,8 @@ function loadTrack(track_index){
     curr_track.load();
 
     track_art.style.backgroundImage = "url(" + music_list[track_index].img + ")";
-    track_name[0].innerHTML = music_list[track_index].name;
-    track_artist[0].innerHTML= music_list[track_index].artist;
+    track_name.innerHTML = music_list[track_index].name;
+    track_artist.innerHTML= music_list[track_index].artist;
     
      document.querySelector('.track-name2')[0,0].innerHTML = music_list[0].name;
     document.querySelector('.track-artist2')[0,0].innerHTML= music_list[0].artist;
