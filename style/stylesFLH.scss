@@ -1,0 +1,249 @@
+@import 'others';
+.AMBROLeftHeader{
+    width: 104px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 7px;
+    top: 13px;
+img{
+    width: 35px;
+}
+}
+.AMBROLeftHeader h2 {
+    width: 61px;
+    height: 22px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    position: relative;
+    left: 14px;
+    top: 3px;
+}
+
+.NavbarFL {
+    width: 18vw;
+    height: 34.5vh;
+    position: absolute;
+    top: 66px;
+    left: 8px;
+}
+.BoldedHomel{
+    display: none;
+}
+.BoldedSearchl{
+    display: none;
+}
+.BoldedLibraryl{
+    display: none;
+}
+.BoldedHeartl{
+    display: none;
+}
+.HomeAL{
+    width: 7vw !important;
+     span{
+        position: relative;
+    top: 3px;
+    margin-left: 5px !important;
+        font-size: 20px !important;
+    }
+}
+.SearchAL{
+     span{
+        position: relative;
+    top: 3px;
+    margin-left: 5px !important;
+        font-size: 20px !important;
+        
+    }
+    width: 8vw !important;
+}
+.LibraryAL{
+     span{
+        position: relative;
+    top: 3px;
+    margin-left: 5px !important;
+        font-size: 20px !important;
+    }
+        width: 96px;
+}
+.PlaylistAL{
+     span{
+        margin-left: 5px !important;
+        position: relative;
+    top: 3px;
+        font-size: 20px !important;
+    }
+    width: 114px;
+}
+.HeartAL{
+     span{
+        margin-left: 5px !important;
+        position: relative;
+    top: 3px;
+        font-size: 20px !important;
+    }
+    width: 93px;
+}
+.p-s-d-containerLA{
+    width: fit-content;
+    height: 16vh;
+    position: absolute;
+    bottom: 155px;
+    left: 44px;
+a {
+    font-size:23px !important;
+}
+}
+.s-u-l-i-L{
+left: 25px;
+    position: absolute;
+    bottom:64px;
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    flex-direction: column;}
+    #log-inL{
+        background: white;
+      @include FullFlex;       
+        font-size: 1.8vw;
+        border-radius: 2vw;
+        color: black !important;
+         border-radius: 4vw;
+        width: 113px !important;
+        height: 42px !important; 
+        font-size: 27px!important;
+    &:hover{
+    width: 117px !important;
+    height: 45px !important;
+    font-size: 30px !important; 
+    }
+    }
+    #sign-upL{ @include FullFlex;  
+        width: 113px !important;
+        color: #9e9da3;
+        height: 42px !important; 
+        font-size: 27px!important;
+          &:hover{
+              color: white !important;
+              font-size: 30px !important;
+          }
+        }
+        .arrowsL {
+            width: 95px;
+            position: absolute;
+            bottom: 12px;
+            left: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+          .LeftArrowL{
+            width: 40px !important;
+    height: 40px !important;
+    background-color: #090909;
+    border-radius: 3vw;
+    @include FullFlex;
+    cursor: pointer;
+img{
+    width: 22px;
+}
+          }
+          .RightArrowL{
+            background-color: #090909;
+            border-radius: 3vw;
+            @include FullFlex;
+            width: 40px !important;
+            height: 40px !important;
+            rotate: 180deg;
+            cursor: pointer;
+        img{
+            width: 22px;
+        }
+          }
+          .settingsImgL {
+            width: 31px;
+            height: 29px;
+            position: absolute;
+            left: 12px;
+            bottom: 16px;
+            cursor: pointer;
+        }
+          .HomeAL {
+            width: 9vw !important;
+            grid-column: 1/3;
+            grid-row: 1/2;
+          }
+          .HomeAL span {
+            position: relative;
+            top: 3px;
+            margin-left: 5px !important;
+            font-size: 23px !important;
+          }
+          .SearchAL {
+            width: 10.2vw !important;
+            grid-column: 1/3;
+            grid-row: 2/3;
+          }
+          .SearchAL span {
+            position: relative;
+            top: 3px;
+            margin-left: 5px !important;
+            font-size: 25px !important;
+          }
+          .LibraryAL {
+            width: 14vw;
+            grid-column: 1/3;
+            grid-row: 3/4;
+        @media only screen and (max-width:764px) {
+            width: 15vw;
+        }  
+        }
+          .LibraryAL span {
+            position: relative;
+            top: 3px;
+            margin-left: 5px !important;
+            font-size: 23px !important;
+          }
+          .d-p-navbar{
+                height: 73px;
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              grid-column: 1/3;
+              grid-row: 5/7;
+          }
+          .PlaylistAL {
+            width: 136px;
+          }
+          .PlaylistAL span {
+            margin-left: 5px !important;
+            position: relative;
+            top: 3px;
+            font-size: 22px !important;
+          }
+          .HeartAL {
+            width: 116px;
+          }
+          .HeartAL span {
+            margin-left: 5px !important;
+            position: relative;
+            top: 3px;
+            font-size:
+             23px !important;
+          }
+    .t-p-navbarFL {
+        width: -moz-fit-content;
+        width: fit-content;
+        position: absolute;
+        left: 3px;
+        display: grid;
+        height: 101%;
+        justify-content: space-between;
+        grid-template-columns: 22px 10px 116px;
+        grid-template-rows: 39px 39px 39px 39px 39px 39px;
+}

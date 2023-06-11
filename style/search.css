@@ -1,0 +1,939 @@
+@font-face {
+  font-family: dongle;
+  src: url(../assets/Dongle-Regular.ttf);
+}
+* {
+  font-family: dongle;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+
+header {
+  width: 100%;
+  background-color: #0f0f0f;
+  height: 64px;
+  z-index: 200;
+  position: fixed;
+  left: 0%;
+  display: grid;
+  align-items: center;
+  top: 0%;
+  grid-template-columns: 10px 10vw 15px 51vw 10px 155px 220px 6vw auto;
+  grid-template-rows: 64px;
+}
+header #dropdownMenu2 {
+  background: none !important;
+  border: none !important;
+}
+header .first-cont {
+  grid-column: 2/3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .first-cont img {
+  width: 40px;
+}
+header .first-cont span {
+  color: white;
+  font-size: 45px;
+  position: relative;
+  top: 4px;
+  left: 3px;
+}
+header ul {
+  display: flex;
+  grid-column: 4/5;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+header ul li {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: space-between;
+}
+header ul li span {
+  color: white;
+  font-size: 26px;
+  position: relative;
+  top: 4px;
+}
+header ul li img {
+  width: 26px;
+  margin-right: 6px !important;
+}
+header .third-cont {
+  grid-column: 6/7;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+header .third-cont div {
+  position: relative;
+  top: 4px;
+}
+header .s-l-cont {
+  grid-column: 7/8;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  height: 100%;
+  justify-content: space-around;
+}
+header .s-l-cont a:first-child {
+  width: 50%;
+  color: #9e9da3;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 4px;
+  margin-right: 7px;
+  font-size: 27px !important;
+}
+header .s-l-cont a:first-child:hover {
+  color: white !important;
+  font-size: 30px !important;
+}
+header .s-l-cont a:last-child {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8vw;
+  border-radius: 2vw;
+  color: black !important;
+  border-radius: 4vw;
+  width: 113px !important;
+  position: relative;
+  top: 4px;
+  height: 42px !important;
+  font-size: 27px !important;
+}
+header .arrows {
+  grid-column: 8/9;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+header .arrows img:first-child {
+  background-color: #090909;
+  width: 35px;
+  border-radius: 30px;
+  padding: 5px;
+  position: relative;
+  top: 4px;
+}
+header .arrows img:last-child {
+  background-color: #090909;
+  width: 35px;
+  border-radius: 30px;
+  padding: 5px;
+  position: relative;
+  top: 4px;
+  rotate: 180deg;
+}
+header .settings-cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-column: 9/10;
+  justify-content: center;
+  grid-row: 1/3;
+  align-items: center;
+}
+header .settings-cont img {
+  width: 30px;
+  position: relative;
+  top: 4px;
+  grid-row: 1/2;
+}
+header .settings-cont .settingsContainer {
+  display: grid !important;
+  grid-row: 2/3;
+  width: 95%;
+  height: 46%;
+  grid-column: 1/2;
+  height: 99%;
+  grid-template-columns: 60px 40px;
+  grid-template-rows: 10px 15px 15px 15px 21px 23px 24px;
+}
+header .settings-cont .settingsContainer li:nth-child(1) {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  align-items: center;
+}
+header .settings-cont .settingsContainer li:nth-child(2) {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+header .settings-cont .settingsContainer li:nth-child(3) {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+header .settings-cont .settingsContainer li:nth-child(4) {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+header .settings-cont header .settings-cont img {
+  margin-right: 8px !important;
+}
+header .BurgerMenu {
+  position: fixed;
+  top: 16px;
+  cursor: pointer;
+  width: 35px;
+  height: 17px;
+  left: 22px;
+}
+header .burgeranimation {
+  position: fixed !important;
+  left: 0px !important;
+}
+header .burgeranimation-2 {
+  position: fixed !important;
+  right: 0px !important;
+}
+@media only screen and (max-width: 1336px) {
+  header header .third-cont {
+    display: none;
+  }
+  header header {
+    grid-template-columns: 2vw 10vw 1.5vw 59vw 12px 170px 100px 50px 25px;
+  }
+  header header ul:first-child {
+    justify-content: space-between;
+  }
+  header header .s-l-cont {
+    grid-column: 6/7;
+  }
+  header header .arrows {
+    grid-column: 7/8;
+  }
+  header header .settings-cont {
+    grid-column: 8/9;
+  }
+  header header .settings-cont img {
+    margin-right: 6px !important;
+  }
+  header header .dropdown {
+    grid-column: 5/6;
+    width: 100%;
+    height: 100%;
+    grid-row: 1/2;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  header header .dropdown #dropdownMenu2 {
+    position: relative;
+    top: 4px;
+  }
+  header header .dropdown ul {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header .cont-play {
+    display: none;
+  }
+  header .spotify-playlist section .description {
+    bottom: 0px;
+  }
+  header .spotify-focus section .description {
+    bottom: 0px;
+  }
+  header .spotify-sleep section .description {
+    bottom: 0px;
+  }
+  header .spotify-playlist section .name {
+    bottom: -5px;
+  }
+  header .spotify-focus section .name {
+    bottom: -5px;
+  }
+  header .spotify-sleep section .name {
+    bottom: -5px;
+  }
+}
+@media only screen and (max-width: 1175px) {
+  header header {
+    grid-template-columns: 2vw 10vw 1.5vw 56vw 12px 170px 100px 50px 25px;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  header header {
+    grid-template-columns: 8px 45px 10px 60vw 2vw 180px 100px 40px 22px;
+  }
+  header header .first-cont span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  header header {
+    grid-template-columns: 8px 45px 10px 60vw 3vw 170px 95px auto;
+  }
+}
+header * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+header .dropdown {
+  display: none;
+}
+header .leftBurgerMenu {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  header header {
+    display: none;
+  }
+  header .leftBurgerMenu {
+    display: grid;
+    position: fixed;
+    background-color: black;
+    width: 185px;
+    height: 100%;
+    display: grid;
+    z-index: 555;
+    top: 0;
+    left: -200px;
+    transition: 1.5s;
+    grid-template-columns: 15px 150px;
+    grid-template-rows: 2% 6% 2% 38% 7% 11% 2% 15% 3% 7% 6%;
+  }
+  header .closeArrow {
+    position: absolute;
+    width: 21%;
+    height: 6%;
+    top: 48.5%;
+    left: 80%;
+  }
+  header .LBhead {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-content: space-between;
+  }
+  header .LBhead img {
+    width: 50px;
+    height: 50px;
+  }
+  header .LBhead span {
+    color: white;
+    font-size: 44px;
+    position: relative;
+    bottom: 4px;
+    left: 5px;
+  }
+  header ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #979797;
+    font-size: 17px;
+    font-size: 30px;
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+  header ul li img {
+    width: 35px;
+  }
+  header ul li span {
+    position: relative;
+    top: 3px;
+  }
+  header .l-p-d-s-cont {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    color: #979797;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 100%;
+    font-size: 26px;
+  }
+  header .L-s-p-cont {
+    grid-column: 2/3;
+    grid-row: 8/9;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  header .L-s-p-cont a:nth-child(2) {
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    font-size: 1.8vw;
+    color: black;
+    border-radius: 50px;
+    font-size: 35px;
+  }
+  header .L-s-p-cont a:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #9e9da3;
+    border-radius: 3vw;
+    height: 45%;
+    font-size: 1.8vw;
+    font-size: 35px;
+  }
+  header .LArrows {
+    grid-column: 2/3;
+    grid-row: 10/11;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    height: 100%;
+    justify-content: center;
+  }
+  header .LArrows img:first-child {
+    width: 40px;
+    height: 40px;
+  }
+  header .LArrows img:last-child {
+    width: 40px;
+    height: 40px;
+    rotate: 180DEG;
+  }
+  header .LSettings {
+    grid-column: 2/3;
+    grid-row: 11/12;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  header .LSettings img {
+    width: 38px;
+    height: 38px;
+  }
+  header .LSettings a {
+    font-size: 35px;
+    position: relative;
+    top: 4px;
+    color: #979797;
+  }
+}
+header .imgcont:hover {
+  background-color: #979797;
+}
+header .arrows :first-child {
+  cursor: pointer;
+  padding: 7px !important;
+}
+header .arrows :last-child {
+  padding: 7px !important;
+  cursor: pointer;
+}
+header .LArrows :first-child {
+  padding: 7px !important;
+  cursor: pointer;
+}
+header .LArrows :last-child {
+  padding: 7px !important;
+  cursor: pointer;
+}
+header .third-cont div {
+  cursor: pointer;
+}
+header .third-cont div {
+  color: #9e9da3;
+}
+header .third-cont div:hover {
+  color: white;
+}
+header header ul li {
+  cursor: pointer;
+}
+header header ul li:hover {
+  color: #9e9da3;
+}
+@media only screen and (max-width: 1110) {
+  header .container-footer {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    display: grid;
+    grid-template-columns: 4% 115px 4% 115px 4% 115px 25vw 185px !important;
+    grid-template-rows: 190px 10px 50px 30px 40px;
+  }
+}
+header .hop-on-container {
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 104;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+header .hop-on-container section {
+  flex-grow: 0;
+  border-radius: 10px;
+  width: 810px;
+  display: grid;
+  position: relative;
+  transition: 1s;
+  top: 15px;
+  grid-template-columns: 70px 300px 70px 300px 70px;
+  grid-template-rows: 70px 75px 35px 120px 30px 25px 70px;
+  background-image: url(../images/playerbackground2.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .hop-on-container section img {
+  grid-column: 2/3;
+  width: 100%;
+  grid-row: 2/5;
+  height: 123%;
+  border-radius: 10px;
+}
+header .a-cont {
+  grid-column: 4/5;
+  grid-row: 4/5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+header .a-cont a:First-child {
+  background-color: #1ed760;
+  width: 52%;
+  height: 42%;
+  border-radius: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: black;
+  font-family: system-ui;
+}
+header .a-cont a:First-child:hover {
+  width: 53%;
+  height: 43%;
+}
+header .a-cont a:last-child {
+  align-items: center;
+  width: 53%;
+  height: 43%;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid grey;
+  border-radius: 60px;
+  font-family: system-ui;
+  font-weight: 700;
+}
+header .a-cont a:last-child:hover {
+  width: 55%;
+  border-color: white;
+  height: 45%;
+}
+header p {
+  grid-column: 3/4;
+  grid-row: 7/8;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: #a7a7a7;
+  font-size: 15px;
+  letter-spacing: 3.4px;
+  height: 30%;
+  font-family: system-ui;
+  font-weight: 600;
+  position: relative;
+  top: 80px;
+}
+header p:hover {
+  font-size: 16.5px;
+  color: white;
+}
+header .hop-on-class {
+  position: relative;
+  top: 0px !important;
+}
+header .WHOLEBODY2 {
+  width: 100vw;
+  height: 100vh;
+}
+header .WHOLEBODY2 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  display: grid;
+  width: 100vw;
+  height: 60px;
+  background-color: black;
+  grid-template-columns: 15px 45px 1fr 30px 15px 110px 15px 30px 15px;
+}
+header .WHOLEBODY2 header img:nth-child(1) {
+  grid-column: 2/3;
+  width: 80%;
+  height: 50%;
+}
+header .WHOLEBODY2 header img:nth-child(2) {
+  grid-column: 4/5;
+  width: 80%;
+  height: 35%;
+}
+header .WHOLEBODY2 header img:last-child {
+  grid-column: 8/9;
+  width: 80%;
+  height: 50%;
+}
+header .WHOLEBODY2 header button {
+  grid-column: 6/7;
+  width: 100%;
+  height: 40%;
+  border-radius: 200px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: white;
+  display: flex;
+  font-family: system-ui;
+  font-weight: 600;
+  font-size: 11.5px;
+}
+header .WHOLEBODY2 .MAINCONTAINER {
+  width: 100%;
+  background-color: #141212;
+  right: 0;
+  height: 233vh;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  top: 61px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+header .WHOLEBODY2 .MAINCONTAINER .spotify-focus {
+  height: 300px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-around;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: flex-end;
+  padding-right: 15px !important;
+  position: relative;
+  padding-left: 15px !important;
+}
+header .WHOLEBODY2 .MAINCONTAINER .spotify-focus a:nth-child(1) {
+  position: absolute;
+  width: 88px;
+  top: 0px;
+  left: 18px;
+  color: white;
+  height: 29px;
+  font-size: 30px;
+  cursor: pointer;
+}
+header .WHOLEBODY2 .MAINCONTAINER .spotify-focus section {
+  width: 180px;
+  height: 275px;
+  border-radius: 6px;
+  background: none;
+}
+header .WHOLEBODY2 .MAINCONTAINER .spotify-focus section .name {
+  width: 84%;
+  color: #e8e8e8;
+  height: 10%;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  margin-top: 16px !important;
+}
+header .WHOLEBODY2 .MAINCONTAINER .spotify-focus section .description {
+  white-space: break-spaces;
+}
+header .WHOLEBODY2 .MAINCONTAINER .spotify-focus section img {
+  width: 100%;
+  border-radius: 4px;
+}
+header .spotify-focus::-webkit-scrollbar {
+  display: none;
+}
+header .spotify-playlist::-webkit-scrollbar {
+  display: none;
+}
+header .spotify-sleep::-webkit-scrollbar {
+  display: none;
+}
+header .WHOLEBODY2 {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  header .img-cont {
+    display: flex;
+    cursor: pointer;
+    width: 120%;
+    justify-content: space-evenly;
+    grid-column: 5/8;
+    grid-row: 3/5;
+    height: 100%;
+    align-items: end;
+  }
+  header .container-footer {
+    white-space: nowrap;
+    gap: 5.5px;
+  }
+  header .WHOLEBODY2 {
+    display: block;
+  }
+  header .WHOLEBODY2 .MAINCONTAINER {
+    overflow: hidden;
+  }
+  header .WHOLEBODY2 .MAINCONTAINER .spotify-focus {
+    height: 300px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: -moz-fit-content;
+    width: 100%;
+    align-items: flex-end;
+    padding-right: 15px !important;
+    position: relative;
+    padding-left: 15px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: start;
+  }
+  header .WHOLEBODY2 .MAINCONTAINER .spotify-focus a:nth-child(1) {
+    font-size: 34px;
+    position: sticky;
+    bottom: 270px !important;
+    color: white;
+    width: 0px;
+  }
+  header .WHOLEBODY2 .MAINCONTAINER .spotify-focus a:nth-child(2) {
+    display: none;
+  }
+  header .WHOLEBODY2 .MAINCONTAINER .spotify-sleep {
+    height: 300px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: -moz-fit-content;
+    width: 100%;
+    align-items: flex-end;
+    padding-right: 15px !important;
+    position: relative;
+    padding-left: 15px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: start;
+  }
+  header .WHOLEBODY2 .MAINCONTAINER .spotify-sleep a:nth-child(1) {
+    font-size: 34px;
+    position: sticky;
+    bottom: 270px !important;
+    color: white;
+    width: 0px;
+  }
+  header .WHOLEBODY2 .MAINCONTAINER .spotify-sleep a:nth-child(2) {
+    display: none;
+  }
+  header .WHOLEBODY2 .MAINCONTAINER .spotify-playlist {
+    height: 300px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: -moz-fit-content;
+    width: 100%;
+    align-items: flex-end;
+    padding-right: 15px !important;
+    position: relative;
+    padding-left: 15px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: start;
+  }
+  header .WHOLEBODY2 .MAINCONTAINER .spotify-playlist a:nth-child(1) {
+    white-space: nowrap;
+    font-size: 34px;
+    position: sticky;
+    bottom: 270px !important;
+    color: white;
+    width: 0px;
+  }
+  header .WHOLEBODY2 .MAINCONTAINER .spotify-playlist a:nth-child(2) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 485px) {
+  header .img-cont {
+    display: flex;
+    cursor: pointer;
+    width: 75%;
+    justify-content: space-evenly;
+    grid-column: 4/8;
+    grid-row: 3/5;
+    height: 100%;
+    align-items: end;
+  }
+}
+@media only screen and (max-width: 430px) {
+  header .LinksC {
+    display: none;
+  }
+  header .companyC {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+}
+header .communitiesC {
+  grid-row: 1/2;
+  grid-column: 4/6;
+  color: #909090 !important;
+}
+header .communitiesC div:first-child {
+  color: white !important;
+}
+header .rightBurgerMenu {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 400;
+  position: fixed;
+  transition: 1.5s;
+  top: 0;
+  right: -100vw;
+  display: grid;
+  grid-template-columns: 60px 300px 1fr 90px;
+  grid-template-rows: 55px 10px 35px 20px 35px 30px 3px 30px 290px 50px 69px 50px;
+}
+@media only screen and (max-width: 435px) {
+  header .rightBurgerMenu {
+    grid-template-columns: 60px 1fr 1fr 90px;
+  }
+}
+header .rightBurgerMenu .xxxx {
+  grid-column: 4/5;
+  width: 30%;
+  height: 55%;
+  position: relative;
+  left: 41px;
+  top: 15px;
+}
+header .rightBurgerMenu ul {
+  grid-column: 2/3;
+  grid-row: 9/10;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  flex-direction: column;
+  font-size: 30px;
+}
+header .rightBurgerMenu .img-cont-r-b {
+  grid-column: 2/3;
+  grid-row: 11/12;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media only screen and (max-width: 435px) {
+  header .rightBurgerMenu .img-cont-r-b {
+    grid-column: 2/4;
+  }
+}
+@media only screen and (max-width: 360px) {
+  header .rightBurgerMenu .img-cont-r-b {
+    grid-column: 1/4;
+  }
+}
+header .rightBurgerMenu .img-cont-r-b .imgcont {
+  width: 60px;
+  height: 60px;
+}
+@media only screen and (max-width: 435px) {
+  header .rightBurgerMenu .img-cont-r-b .imgcont {
+    width: 48px;
+    height: 48px;
+  }
+}
+header .rightBurgerMenu .img-cont-r-b .imgcont img {
+  width: 25px !important;
+}
+@media only screen and (max-width: 435px) {
+  header .rightBurgerMenu .img-cont-r-b .imgcont img {
+    width: 18px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header .bigline {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .img-cont {
+    display: none;
+  }
+}/*# sourceMappingURL=search.css.map */

@@ -1,0 +1,514 @@
+@font-face{
+font-family: dongle;
+src: url(../Dongle-Regular.ttf);
+}
+@mixin FullFlex {
+display:flex ;
+justify-content: center;
+align-items: center;
+}
+*{
+margin: 0 ;
+padding: 0 ;
+text-decoration: none !important;
+font-family: dongle;
+box-sizing: border-box !important;
+
+}
+body{
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.MTLaCONTAINER{
+    width: 450px;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 40px;
+    grid-template-rows:40px 60px 44px 25px 44px 65px 30px 260px 30px 27px 20px 75px 40px 30px 30px 100px 35px 90px 67px 30px 16px;
+    h3{
+        grid-column: 1/2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-row: 2/3;
+        font-size: 35px;
+    }
+}
+.ambrolify{
+        grid-column: 1/2;
+    width: 100%;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+  img{
+    width: 35px;
+  }
+    span{
+        font-family: system-ui;
+        font-size: 25px;
+        position: relative;
+        top: 0px;
+        font-weight: 600;
+        padding-left: 4px;
+}
+
+  }
+  .s-u-facebook-cont{
+    grid-column: 1/2;
+grid-row: 3/4;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: baseline;
+section{
+    width: 83.5%;
+    background-color: #405a93;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+    height: 45px;
+    span{
+        color: white;
+        font-size: 15px;
+        font-family: system-ui;
+        font-weight: 600;
+        margin-bottom: 2px;
+    }
+    img{
+        width: 22px;
+    }
+}
+}
+.s-u-google-cont{
+    grid-row: 5/6;
+    width: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 45px;
+section{
+    width: 83.5%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: 2px solid;
+    border-color: #535353;
+    cursor: pointer;
+    height: 45px;
+   
+    }
+    span{
+        color: white;
+        font-size: 15px;
+        font-family: system-ui;
+        font-weight: 600;
+        margin-bottom: 2px;
+        color: #535353;
+    }
+    img{
+        width: 22px;
+    }
+}
+ .s-u-google-cont section:hover{
+        width: 85%;
+        height: 48px;}
+ .s-u-facebook-cont section:hover{
+    width: 85%;
+    height: 48px;
+    background-color: #384F81;
+}
+.or-cont{
+    grid-row: 6/7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+.lineLeft{
+    width: 150px;
+    height: 1px;
+    background: #CCCC;
+}
+.lineRight{
+    width: 150px;
+    height: 1px;
+    background: #CCCC;
+}
+span{
+    color: grey;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+}
+.input-cont{
+    grid-column: 1/2;
+    grid-row: 8/9;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+form{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 30%;
+    flex-direction: column;
+  
+span{
+    width: fit-content;
+    font-size: 24px;
+}
+label{
+    display: flex;    justify-content: center;
+}
+input{
+    width: 360px;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 29px;
+    height: 45px;
+    text-indent: 20px;
+    padding-top: 5px;
+}
+input::placeholder{
+    font-size: 23px;
+}
+}
+
+}
+.eyeimg{
+        width: 25px;
+        display: none;
+        position: absolute;
+        left: 320px;
+        top: 46px;
+        cursor: pointer;
+        &:hover{
+         width: 26px;
+         content: url(../images/blackEye.png);
+    }
+}
+.closedeyeimg{
+            width: 25px;
+            position: absolute;
+            left: 320px;
+            top: 46px;
+            cursor: pointer;
+            &:hover{
+             width: 26px;
+             content: url(../images/blackClosedEye.png);
+            }
+        }
+     .date-cont{
+        grid-row: 12/13;
+        display: flex;
+        width: 100%;
+        gap: 27px;
+        justify-content: center;
+        
+    .day-cont{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        font-weight: 100;
+    input{
+    width: 80px;
+    height: 40px;
+    text-indent: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+    } 
+    }
+    #dropdown{
+        background: none;
+        color: black;
+        width: 170px;
+        border-radius: 3px;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        gap: 75px;
+        font-size: 17px;
+        font-family: system-ui;
+    }
+    .month-cont{
+        display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 68px;
+    font-size: 19px;
+}
+
+.dropdown-menu li a{
+    font-family: system-ui;
+    font-size: 15px;
+    &::first-letter{
+        text-transform: capitalize;
+    }
+}
+.year-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 67px;
+    font-size: 17px;
+    input{
+        width: 78px;
+    height: 38px;
+    text-indent: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: system-ui;
+    }
+}
+.gender-cont {
+    grid-row: 14/15;
+    display: flex;
+    font-family: system-ui;
+    height: 100%;
+    justify-content: center;
+    width: 95%;
+    gap: 33px;
+    align-items: center;
+    span{
+        width: 180px;
+        display: flex;
+        height: fit-content;
+        font-size: 24px;
+    }
+form{
+    display: flex;
+    align-items: center;
+    width: 45px;
+    gap: 5px;
+    height: 14px;
+    justify-content: space-between;
+    font-family: system-ui;
+    font-size: 20px;
+    span{
+        position: relative;
+        top: 3px;
+    }
+}
+}
+.suggestions{
+    grid-row: 16/17;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+    font-family: system-ui;
+    font-size: 19px;
+    align-items: center;
+label:first-child{
+    width: 80%;
+    font-family: system-ui;
+    line-height: 13px;
+span{
+    position: relative;
+    bottom: 3px;
+}
+}
+label:last-child{
+    width: 80%;
+    line-height: 20px;
+span{
+    position: relative;
+    bottom: 3px;
+}
+}
+}
+.term-and-policy{
+    grid-row: 18/19;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;}
+.f-text{
+        width: 76%;
+    font-size: 16px;
+
+span{
+    color: #55ab61;
+    text-decoration: underline !important;
+}
+}
+.s-text{
+        width: 96%;
+    font-size: 17px;
+span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #55ab61;
+    text-decoration: underline !important;
+}
+}
+.s-b-c{
+    grid-row: 19/20;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+button{
+    width: 165px;
+    height: 55px;
+    border-radius: 53px;
+    border: none;
+    background: #65df77;
+    font-size: 30px;
+    letter-spacing: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+.question{
+    font-size: 16px;
+    grid-row: 20/21;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui;
+a{
+    font-size: 16px;
+    font-family: system-ui;
+    padding-left: 4px;
+    text-decoration: underline !important;
+    color: #55ab61;
+}
+}
+.gender-cont form {
+    display: flex;
+    align-items: center;
+    width: 125px;
+    gap: 16px;
+    height: 14px;
+    /* justify-content: center; */
+    font-family: system-ui;
+    font-size: 20px;
+}
+.randomizeImg{
+    width: 31px;
+    position: absolute;
+    top: 45px;
+    left: 315px;
+  
+}  
+.randomizeImg:hover{    background-color: #d5d5d5;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    .invalidcontainer{
+        width: 163px;
+        background-color: #727272;
+        position: absolute;
+        border-radius: 5px;
+        height: 30px;
+        bottom: -36px;
+        z-index: 15;
+        display: none;
+        padding: 5px;
+        font-size: 15px;
+        font-weight: 100;
+        left: 245px;
+        color: whitesmoke;
+        line-height: 12px;
+    }
+    .invalidcontainerDva{
+        width: 163px;
+        background-color: #727272;
+        position: absolute;
+        border-radius: 5px;
+        height: 30px;
+        bottom: -36px;
+        z-index: 15;
+        display: none;
+        padding: 5px;
+        font-size: 15px;
+        font-weight: 100;
+        left: 270px;
+        color: whitesmoke;
+        line-height: 12px;
+    }
+    .invalidcontainertri{
+        width: 163px;
+        background-color: #727272;
+        position: absolute;
+        border-radius: 5px;
+        height: 30px;
+        bottom: -36px;
+        z-index: 15;
+        display: none;
+        padding: 5px;
+        font-size: 15px;
+        font-weight: 100;
+        left: 270px;
+        color: whitesmoke;
+        line-height: 12px;  
+    }
+    .dBlock{        display: block;} .d-n{display: none;}
+    .invalid-class1{
+        color: red;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    user-select: none;
+    position: absolute;
+    top: 79px;
+    white-space: nowrap;
+    left: 110px;
+    }
+    .invalid-class3{
+        color: red;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    user-select: none;
+    position: absolute;
+    top: 79px;
+    white-space: nowrap;
+    left: 110px;
+    }
+    .invalid-class2{
+        color: red;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    user-select: none;
+    position: absolute;
+    top: 79px;
+    white-space: nowrap;
+    left: 110px;
+    }
+    .s-b-c button{
+opacity: 0;
+transition: 0.4s;
+cursor: initial !important;
+    }
+    .s-b-c-b-n{
+opacity: 1 !important;
+    }
+    .genderAlert{
+        display: none;
+    }

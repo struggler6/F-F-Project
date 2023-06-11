@@ -1,0 +1,73 @@
+@font-face {
+  font-family: dongle;
+  src: url(../Dongle-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  box-sizing: border-box !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+@keyframes LeftAnimate {
+  from {
+    left: -82vw;
+  }
+  to {
+    left: 10vw;
+  }
+}
+@keyframes toRightWidth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opacityanimate1 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes opacityanimate0 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animate3 {
+  from {
+    top: -8%;
+  }
+  to {
+    top: -13%;
+  }
+}/*# sourceMappingURL=others.css.map */
