@@ -54,14 +54,14 @@ function loadTrack(track_index){
     track_name.innerHTML = music_list[track_index].name;
     track_artist.innerHTML= music_list[track_index].artist;
     
-     document.querySelector('.track-name2')[0,0].innerHTML = music_list[0].name;
-    document.querySelector('.track-artist2')[0,0].innerHTML= music_list[0].artist;
+     document.querySelector('.track-name2')[0].innerHTML = music_list[0].name;
+    document.querySelector('.track-artist2')[0].innerHTML= music_list[0].artist;
 
-    document.querySelector('.track-name2')[0,1].innerHTML = music_list[1].name;
-     document.querySelector('.track-artist2')[0,1].innerHTML= music_list[1].artist;
+    document.querySelector('.track-name2')[1].innerHTML = music_list[1].name;
+     document.querySelector('.track-artist2')[1].innerHTML= music_list[1].artist;
 
-     document.querySelector('.track-name2')[0,2].innerHTML = music_list[2].name;
-     document.querySelector('.track-artist2')[0,2].innerHTML= music_list[2].artist;
+     document.querySelector('.track-name2')[2].innerHTML = music_list[2].name;
+     document.querySelector('.track-artist2')[2].innerHTML= music_list[2].artist;
     updateTimer = setInterval(setUpdate, 1000);
 
     curr_track.addEventListener('ended', nextTrack);
